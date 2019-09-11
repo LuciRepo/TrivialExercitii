@@ -193,6 +193,29 @@ public class TrivialProblemsHomework {
         int n=in.nextInt();
         System.out.println("1/"+n);*/
 
+        //15.	Sa se afiseze inversul unui numar dat.Rezolvare la clasa
+
+        /*System.out.println("Dati numarul n");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int rest;
+        int newNumber=0;
+        int contor = 0;
+        while (n != 0) {
+            rest = n % 10;
+            n = n / 10;
+            newNumber = newNumber * 10 + rest;
+            /*contor++;
+            for (int i=1;i<1;i++){   //construim numarul invers
+                newNumber=i*10+rest;
+                System.out.println(newNumber);
+            }
+            System.out.print(rest);*/
+        // }
+        //  System.out.println("Inversul este " + newNumber);
+
+        //  System.out.println("1/"+n);
+
         // 16.	Sa se determine daca un numar este palindrom sau nu
 
         // (palindrom = care citit de la stânga la dreapta sau de la dreapta la stânga rămâne neschimbat ex  4334)
@@ -317,14 +340,14 @@ public class TrivialProblemsHomework {
 
         //22.	Sa se determine si sa se afiseze minimul dintr-un sir de numere citite de la tastatura.
 
-        System.out.println("Dati lungimea sirului de numere n=");
+       /* System.out.println("Dati lungimea sirului de numere n=");
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        String[] array = new String[n];
+        String[] array = new String[n]; //int array[]=new int [n];
         for (int i = 0; i < n; i++) {
             System.out.println("Introduceti in sir elementul de pe pozitia " + i);
-            Scanner inArray = new Scanner(System.in);
-            int arrayElement = in.nextInt();
+            Scanner inArray = new Scanner(System.in); // nu e cazul sa mai fie definit
+            int arrayElement = in.nextInt(); //int arrayElement=in.nextInt();
             String convertToString;
             convertToString = String.valueOf(arrayElement);
             array[i] = convertToString;
@@ -335,7 +358,28 @@ public class TrivialProblemsHomework {
                 minimum=Integer.valueOf(array[i]);
             }
         }
-        System.out.println("Minimul dintre elementele sirului este: "+minimum);
+        System.out.println("Minimul dintre elementele sirului este: "+minimum);*/
+
+
+        //22.	Sa se determine si sa se afiseze minimul dintr-un sir de numere citite de la tastatura. Rezolvare la clasa
+
+       /* System.out.println("Dati lungimea sirului de numere n=");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] array = new int[n]; //int array[]=new int [n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Introduceti in sir elementul de pe pozitia " + i);
+           // Scanner inArray = new Scanner(System.in); nu e cazul , a fost definit deja
+            int arrayElement = in.nextInt(); //int arrayElement=in.nextInt();
+            array[i] = arrayElement;
+        }
+        int minimum = array[0];
+        for (int i = 1; i < n; i++) {
+            if (array[i] <= minimum) {
+                minimum = array[i];
+            }
+        }
+        System.out.println("Minimul dintre elementele sirului este: " + minimum);*/
 
         //23.	Sa se determine si sa se afiseze maximul dintr-un sir de numere citite de la tastatura.
 
@@ -358,6 +402,35 @@ public class TrivialProblemsHomework {
             }
         }
         System.out.println("Maximul dintre eelementele sirului este: "+maximum);*/
+
+        //23.	Sa se determine si sa se afiseze maximul dintr-un sir de numere citite de la tastatura. Rezolvat la clasa
+
+      /*  System.out.println("Dati lungimea sirului de numere n=");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] array = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Introduceti in sir elementul de pe pozitia " + i);
+            //Scanner inArray = new Scanner(System.in); nu e cazul
+            int arrayElement = in.nextInt();
+            // String convertToString; nu e cazul
+            //convertToString = String.valueOf(arrayElement); nu e cazul
+            array[i] = arrayElement;
+        }
+        int maximum = array[0];
+        int minimum = array[0];
+        for (int i = 1; i < n; i++) {
+            if (array[i] >= maximum) {
+                maximum = array[i];
+            } else {
+                if (array[i] < minimum) {
+                    minimum = array[i];
+                } else {
+                }
+            }
+        }
+        System.out.println("Maximul dintre elementele sirului este: " + maximum);
+        System.out.println("Minimul dintre elementele sirului este: "+ minimum);*/
 
         //24.Se da un vector a1..an. Sa se determine nr. numerelor pozitive si suma lor, apartinand intervalului [a,b].
 
@@ -524,7 +597,23 @@ public class TrivialProblemsHomework {
             }
         }*/
 
-        //33.	Sa se afiseze toate numerele prime mai mici ca n, dat
+        //33.	Sa se afiseze toate numerele prime mai mici ca n, dat . Rezolvat la clasa.
+
+        /*System.out.println("Introduceti numarul n");
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+        for (int i = 1; i <= number; i++) {
+            boolean prime = true;
+            for (int j = 2; j < i/2; j++) { //mergem pana la jumatate sau pana la modul din radical din i
+                if (i % j == 0) {
+                    prime = false;
+                }
+            }
+
+            if (prime == true) {
+                System.out.println("Numar prim mai mic decat "+number+" este "+i);
+            }
+        }*/
 
 
         // 34.	sa se gaseasca perechile de numere a caror suma este 1000, primul sa fie divizibil cu 17 iar al doilea cu 19.
@@ -694,7 +783,39 @@ public class TrivialProblemsHomework {
             }
         }*/
 
-        //42.	Se citeste o succesiune de numere pana la zero. Sa se adune cele pozitive, sa se numere cate negative.
+
+        //41.	(vectori: ) Se citeste un sir de numere. Sa se spuna pe ce pozitie se afla primul element 0. Rezolvat la clasa
+
+     /*   System.out.println("Dati dimeniunea sirului de numere  ");
+        Scanner inElementsNumber = new Scanner(System.in);
+        int elementsNumber = inElementsNumber.nextInt();
+        if (elementsNumber < 0) {
+            System.out.println("Trebuie sa introduceti un numar pozitiv");
+            return;
+        } else {
+            int[] vector = new int[elementsNumber];
+            int elementPosition = 0;
+            boolean zero = true;
+            //  String convertToString;
+
+            System.out.println("Introduceti elementele sirului ");
+            for (int i = 0; i < elementsNumber; i++) {
+               // System.out.println("Dati elementele sirului ");
+                vector[i] = inElementsNumber.nextInt();
+            }
+            int contor = 0;
+            while (contor<elementsNumber&&vector[contor] != 0) {
+                contor++;
+            }
+            if (contor==elementsNumber){
+                System.out.println("Nu exista niciun 0");
+            }else {
+                System.out.println("Pozitia primului 0 este " + contor);
+            }
+        }*/
+
+
+    //42.	Se citeste o succesiune de numere pana la zero. Sa se adune cele pozitive, sa se numere cate negative.
 
        /* System.out.println("Introduceti primul numar");
         boolean zero = false;
@@ -717,9 +838,9 @@ public class TrivialProblemsHomework {
         System.out.println("Suma elementelor pozitive din sir este " + sumPositive);
         System.out.println("Sirul contine " + countNegative + " elemente negative");*/
 
-        //43.	Sa se determine trei numere x,y,z direct proportionale cu a,b,c si a caror suma este S.
-        // (indicatie: (x,y,z) direct prop cu (a,b,c) => x/a=y/b=z/c=s/(a+b+c) => x=s*a/(a+b+c);   y=b*x/a; z=c*x/a)
-        //nu am inteles cerinta
+    //43.	Sa se determine trei numere x,y,z direct proportionale cu a,b,c si a caror suma este S.
+    // (indicatie: (x,y,z) direct prop cu (a,b,c) => x/a=y/b=z/c=s/(a+b+c) => x=s*a/(a+b+c);   y=b*x/a; z=c*x/a)
+    //nu am inteles cerinta
 
         /*double sumABC;
         double proportionalA;
@@ -743,7 +864,7 @@ public class TrivialProblemsHomework {
         proportionalC=c*proportionalA/a;
         System.out.println(proportionalC+" este direct proportional cu "+c);*/
 
-        //46.	Se dau n numere. Sa se treaca toate 0 la coada
+    //46.	Se dau n numere. Sa se treaca toate 0 la coada
 
         /*System.out.println("Dati valoarea n");
         Scanner in=new Scanner(System.in);
@@ -755,8 +876,8 @@ public class TrivialProblemsHomework {
             System.out.println("Generam "+numar+"0");
         }*/
 
-        //47.	Se dau n numere. Sa se faca produsul P al celor diferite de zero. In caz ca toate sunt nule sa se specifice acest lucru.
-        // Numerele se vor citi unul cate unul.(se poate folosi un K=0 initial, semafor pt. cazul cand toate sunt nule. K=1 daca nr<>0.)
+    //47.	Se dau n numere. Sa se faca produsul P al celor diferite de zero. In caz ca toate sunt nule sa se specifice acest lucru.
+    // Numerele se vor citi unul cate unul.(se poate folosi un K=0 initial, semafor pt. cazul cand toate sunt nule. K=1 daca nr<>0.)
 
        /* int produs = 1;
         int k = 0;
@@ -780,8 +901,8 @@ public class TrivialProblemsHomework {
             System.out.println("Produsul numerelor diferite de zero, introduse, este " + produs);
         }*/
 
-        //48.	Se da o succesiune de n numere.
-        // Sa se calculeze raportul dintre suma celor impare si produsul celor pare. Citirea se face element cu element.
+    //48.	Se da o succesiune de n numere.
+    // Sa se calculeze raportul dintre suma celor impare si produsul celor pare. Citirea se face element cu element.
 
         /*int sumNumber=0;
         double multiplicationNumber=1;
@@ -802,7 +923,7 @@ public class TrivialProblemsHomework {
             divideSumAndMulti=sumNumber/multiplicationNumber;
         System.out.println("Raportul dintre suma numerelor impare si produsul celor pare este "+divideSumAndMulti);*/
 
-        //49.	Suma S=12+22+32+…+n2
+    //49.	Suma S=12+22+32+…+n2
 
         /*System.out.println("Introduceti numarul n");
         Scanner inNumber=new Scanner(System.in);
@@ -813,7 +934,7 @@ public class TrivialProblemsHomework {
         }
         System.out.println("Suma este "+sumNumber);*/
 
-        //50.	Suma S=12+32+52+…+(2n+1)2
+    //50.	Suma S=12+32+52+…+(2n+1)2
 
         /*System.out.println("Introduceti numarul n");
         Scanner inNumber=new Scanner(System.in);
@@ -824,9 +945,9 @@ public class TrivialProblemsHomework {
         }
         System.out.println("Suma este "+sumNumber);*/
 
-        //51.	Suma S=1+1*2+1*2*3+…+1*2*3*…*n
+    //51.	Suma S=1+1*2+1*2*3+…+1*2*3*…*n
 
-       /* System.out.println("Introduceti numarul n");
+      /* System.out.println("Introduceti numarul n");
         Scanner inNumber = new Scanner(System.in);
         int number = inNumber.nextInt();
         int sumFactorialN = 0;
@@ -838,7 +959,27 @@ public class TrivialProblemsHomework {
         }
         System.out.println("Suma este " + sumFactorialN);*/
 
-        //52.	Suma S=1+ 2/1*2 +3/1*2*3 + …+ n/1*2*3*…*n
+    //51.	Suma S=1+1*2+1*2*3+…+1*2*3*…*n Rezolvare la clasa
+
+        /*System.out.println("Introduceti numarul n");
+        Scanner inNumber = new Scanner(System.in);
+        int number = inNumber.nextInt();
+        int sumFactorialN = 0;
+
+        for (int i = 1; i <= number; i++) {
+            int produsNumber = 1;
+
+            //System.out.println(produsNumber);
+            for (int j = 1; j <= i; j++) {
+                produsNumber = produsNumber * j;
+            }
+
+            sumFactorialN = sumFactorialN + produsNumber;
+
+        }
+        System.out.println("Suma este " + sumFactorialN);*/
+
+    //52.	Suma S=1+ 2/1*2 +3/1*2*3 + …+ n/1*2*3*…*n
 
         /*System.out.println("Introduceti numarul n");
         Scanner inNumber = new Scanner(System.in);
@@ -855,7 +996,7 @@ public class TrivialProblemsHomework {
         }
         System.out.println("Suma este " + sumFactorialN);*/
 
-        //53.	Sa se tranfsorme un numar n din baza 10 in 2.
+    //53.	Sa se tranfsorme un numar n din baza 10 in 2.
 
         /*System.out.println("Dati numarul in baza 10 n= ");
         Scanner inNumber10=new Scanner(System.in);
@@ -876,7 +1017,7 @@ public class TrivialProblemsHomework {
             System.out.print(arrayNumber2[i]+" ");
         }*/
 
-        //54.	sa se afiseze daca un numar n e divizibil cu : 5, 7
+    //54.	sa se afiseze daca un numar n e divizibil cu : 5, 7
 
         /*System.out.println("Dati un numar n= ");
         Scanner inN = new Scanner(System.in);
@@ -888,7 +1029,7 @@ public class TrivialProblemsHomework {
 
         }*/
 
-        //55.	sa se afiseze daca un numar a e divizibil cu : b; a+3 cu b; a-b cu 5; a*b cu c
+    //55.	sa se afiseze daca un numar a e divizibil cu : b; a+3 cu b; a-b cu 5; a*b cu c
 
         /*System.out.println("Dati numarul a ");
         Scanner inA = new Scanner(System.in);
@@ -921,7 +1062,7 @@ public class TrivialProblemsHomework {
             System.out.println("Numarul " + (a * b) + " nu este divizibil cu " + c);
         }*/
 
-        //56.	sa se afiseze dif dintre x si y daca x>y si suma lor daca x<y
+    //56.	sa se afiseze dif dintre x si y daca x>y si suma lor daca x<y
 
         /*System.out.println("Dati numarul x ");
         Scanner inX = new Scanner(System.in);
@@ -935,7 +1076,7 @@ public class TrivialProblemsHomework {
             System.out.println("Suma dintre x si y este "+(x+y));
         }*/
 
-        //57.	sa se afle val functiei: f={ max(x,y), pt. x<y; 0 pt. x=y; min(x,y) pt. x>y
+    //57.	sa se afle val functiei: f={ max(x,y), pt. x<y; 0 pt. x=y; min(x,y) pt. x>y
 
        /* System.out.println("Dati numarul x ");
         Scanner inX = new Scanner(System.in);
@@ -953,7 +1094,7 @@ public class TrivialProblemsHomework {
             }
         }*/
 
-        //58.	Sa se afle val functiei: f={x-y pt. x>y; x+y pt. x<y
+    //58.	Sa se afle val functiei: f={x-y pt. x>y; x+y pt. x<y
 
         /*System.out.println("Dati numarul x ");
         Scanner inX = new Scanner(System.in);
@@ -967,7 +1108,7 @@ public class TrivialProblemsHomework {
             System.out.println("Valoarea functiei f este " + (x+y));
         }*/
 
-        //59.	Sa se calc. m.a. a elementelor sirului a1..an, cuprinse intre a si b, a<b.
+    //59.	Sa se calc. m.a. a elementelor sirului a1..an, cuprinse intre a si b, a<b.
 
         /*System.out.println("Introduceti limita sirului n=");
         Scanner inN = new Scanner(System.in);
@@ -993,7 +1134,7 @@ public class TrivialProblemsHomework {
             System.out.println("Media numerelor cuprinse intre " + a + " si " + b + " este " + average);
         }*/
 
-        //60.	sa se afle m.a intre min(x,y2) si min(x2,y)
+    //60.	sa se afle m.a intre min(x,y2) si min(x2,y)
 
        /* System.out.println("Introduceti primul numar");
         Scanner inFirstNumber = new Scanner(System.in);
@@ -1019,7 +1160,7 @@ public class TrivialProblemsHomework {
         average=(firstMinimum+secondMinimum)/2;
         System.out.println("Media aritmetica ceruta este "+ average);*/
 
-        //61.	sa se afle m.a intre max(2x,y) si max(x,2y)
+    //61.	sa se afle m.a intre max(2x,y) si max(x,2y)
 
       /*  System.out.println("Introduceti primul numar");
         Scanner inFirstNumber = new Scanner(System.in);
@@ -1045,7 +1186,7 @@ public class TrivialProblemsHomework {
         average = (firstMaximum+ secondMaximum) / 2;
         System.out.println("Media aritmetica ceruta este " + average);*/
 
-        //62.	sa se afle m.a intre a+b, min(a,b) si min(a-b,(a+b)/2)
+    //62.	sa se afle m.a intre a+b, min(a,b) si min(a-b,(a+b)/2)
 
       /*  System.out.println("Introduceti primul numar");
         Scanner inFirstNumber = new Scanner(System.in);
@@ -1073,14 +1214,14 @@ public class TrivialProblemsHomework {
         average = (sumAB+ firstMinimum+secondMinumum) / 3;
         System.out.println("Media aritmetica ceruta este " + average);*/
 
-        //63.	sa se afiseze sirul puterilor lui 2 (primii 15 termeni)
+    //63.	sa se afiseze sirul puterilor lui 2 (primii 15 termeni)
 
         /*System.out.println("Sirul primelor 15 puteri ale lui 2: ");
         for(double i=0;i<15;i++){
             System.out.print(Math.pow(2,i)+" ");
         }*/
 
-        //64.	Se dau n numere. Sa se numere cate sunt mai mici ca 5, egale cu 5 si mai mari ca 5
+    //64.	Se dau n numere. Sa se numere cate sunt mai mici ca 5, egale cu 5 si mai mari ca 5
 
        /* System.out.println("Introduceti limita n");
         Scanner inN = new Scanner(System.in);
@@ -1106,7 +1247,7 @@ public class TrivialProblemsHomework {
         System.out.println("Au fost introduse "+countEven+" numere egale cu 5");
         System.out.println("Au fost introduse "+countSmaller+" numere mai mici decat 5");*/
 
-        //65.	Sa se faca media aritmetica intre suma si produsul elementelor unui sir de numere cu n elemente
+    //65.	Sa se faca media aritmetica intre suma si produsul elementelor unui sir de numere cu n elemente
 
         /*System.out.println("Introduceti limita n");
         Scanner inN = new Scanner(System.in);
@@ -1131,8 +1272,8 @@ public class TrivialProblemsHomework {
             System.out.println("Media aritmetica ceruta este " + average);
 
         }*/
-    }
 }
+    }
 
 
 
