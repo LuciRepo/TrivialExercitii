@@ -852,31 +852,29 @@ public class TrivialProblemsHomework {
 
         //43.	Sa se determine trei numere x,y,z direct proportionale cu a,b,c si a caror suma este S.
         // (indicatie: (x,y,z) direct prop cu (a,b,c) => x/a=y/b=z/c=s/(a+b+c) => x=s*a/(a+b+c);   y=b*x/a; z=c*x/a)
-        //rezolvare incompleta....!!!!
+        //rezolvare ???
 
-        /*double sumXYZ=0;
-        double proportionalA=0;
-        double proportionalB=0;
-        double proportionalC=0;
         System.out.println("Introduceti primul numar a");
-        Scanner inA=new Scanner(System.in);
-        double a=inA.nextDouble();
+        Scanner in = new Scanner(System.in);
+        double a = in.nextDouble();
         System.out.println("Introduceti cel de-al doilea numar b");
-        Scanner inB=new Scanner(System.in);
-        double b=inB.nextDouble();
+        // Scanner in=new Scanner(System.in);
+        double b = in.nextDouble();
         System.out.println("Introduceti cel de-al treilea numar c");
-        Scanner inC=new Scanner(System.in);
-        double c=inC.nextDouble(
-        int contor=0;
-        while((a+b+c)<=sumXYZ){
-            proportionalA++;
-            proportionalB++;
-            proportionalC++;
-            sumXYZ=proportionalA+proportionalB+proportionalC;
-            if(proportionalA%a==0 &&proportionalB%b==0 && proportionalC%c==0){
-                System.out.println(proportionalA+" "+proportionalB+" "+proportionalC);
+        // Scanner in=new Scanner(System.in);
+        double c = in.nextDouble();
+        System.out.println("Introduceti suma sumaXYZ ");
+        double sumXYZ = in.nextDouble();
+        double sumABC = a + b + c;
+        for (int i = 1; i <= sumXYZ; i++) {
+            for (int j = 1; j <= sumXYZ; j++) {
+                for (int k = 1; k <= sumXYZ; k++) {
+                    if (i % a == 0 && j % b == 0 && k % c == 0 && (i + j + k) % (sumABC) == 0) {
+                        System.out.println(i + " " + j + " " + k);
+                    }
+                }
             }
-        }*/
+        }
 
 
         //44.	Se da un sir de n numere intregi. Sa se calculeze urmatoarele sume:
@@ -906,7 +904,6 @@ public class TrivialProblemsHomework {
                 System.out.println("Suma elementelor intre doua elemente de 0 este "+sumBetween0);
             }
         }*/
-
 
 
 //45.	Permutarea a doua variabile
@@ -1332,7 +1329,7 @@ public class TrivialProblemsHomework {
 
         }*/
     }
-            }
+}
 
 
 
