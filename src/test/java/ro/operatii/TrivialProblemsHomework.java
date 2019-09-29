@@ -75,14 +75,14 @@ public class TrivialProblemsHomework {
 
         //  7.	Sa se determine suma cuburilor primelor n numere
 
-        /*System.out.println("Dati limita naturala n= ");
+        System.out.println("Dati limita naturala n= ");
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int sumCubeN = 0;
         for (int i = 0; i <= n; i++) {
             sumCubeN = sumCubeN + (i * i * i);
         }
-        System.out.println("Suma cuburilor primelor"+ n +"  numere naturale este: " + sumCubeN);*/
+        System.out.println("Suma cuburilor primelor "+ n +"  numere naturale este: " + sumCubeN);
 
         //8.	Sa se determine produsul primelor n numere naturale
 
@@ -854,7 +854,7 @@ public class TrivialProblemsHomework {
         // (indicatie: (x,y,z) direct prop cu (a,b,c) => x/a=y/b=z/c=s/(a+b+c) => x=s*a/(a+b+c);   y=b*x/a; z=c*x/a)
         //rezolvare ???
 
-        System.out.println("Introduceti primul numar a");
+        /*System.out.println("Introduceti primul numar a");
         Scanner in = new Scanner(System.in);
         double a = in.nextDouble();
         System.out.println("Introduceti cel de-al doilea numar b");
@@ -874,7 +874,7 @@ public class TrivialProblemsHomework {
                     }
                 }
             }
-        }
+        }*/
 
 
         //44.	Se da un sir de n numere intregi. Sa se calculeze urmatoarele sume:
